@@ -10,5 +10,6 @@ namespace ComputerHardware
         public Gpu gpu = new Gpu();
         public Memory memory = new Memory();
         public CpuCooler cooler = new CpuCooler();
+        public Case computerCase = new Case();
     }
 }
