@@ -12,15 +12,9 @@ namespace ComputerHardware
         public string Model { get; set; }
         public string Serial { get; set; }
         public DateTime PurchaseDate { get; set; }
-        public CaseType Type { get; set; }
+        public BoardSize Size { get; set; }
         #endregion
     }
 
-    enum CaseType
-    {
-        Small,
-        Mini,
-        Mid,
-        Full
-    }
+
 }
