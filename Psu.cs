@@ -8,10 +8,15 @@ namespace ComputerHardware
     { 
      #region Properties
     public decimal Price { get; set; }
+    public string Make { get; set; }
     public string Model { get; set; }
     public string Serial { get; set; }
-    public decimal Frequency { get; set; }
     public int Watts { get; set; }
-    #endregion
+        #endregion
+
+        public override string ToString()
+        {
+            return $"Price: ${Price}\t Make: ${Make}\tModel: {Model}\tWatts: {Watts}\tSerial: {Serial}";
+        }
     }
 }

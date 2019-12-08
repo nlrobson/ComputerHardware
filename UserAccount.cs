@@ -19,6 +19,11 @@ namespace ComputerHardware
         {
             CreateDate = DateTime.Now;
             AccountNumber = ++lastAccountNumber;
+            Order = new List<Computer>();
+        }
+        public void AddComputer(Computer computer)
+        {
+            Order.Add(computer);
         }
     }
 }

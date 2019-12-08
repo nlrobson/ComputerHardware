@@ -31,7 +31,7 @@ namespace ComputerHardware
             Memory = memory;
             Cooler = cooler;
             MotherBoard = motherBoard;
-            Psu = Psu;
+            Psu = psu;
             ComputerCase = computerCase;
             CreateDate = DateTime.Now;
         }
@@ -51,6 +51,11 @@ namespace ComputerHardware
             ComputerCase = computer.ComputerCase;
             Psu = computer.Psu;
             CreateDate = DateTime.Now;
+        }
+
+        public override string ToString()
+        {
+            return $"CPU: {Cpu}\nGPU: {Gpu}\nMemory: {Memory}\nMotherboard: {MotherBoard}\nCPU Cooler: {Cooler}\nPSU: {Psu}\nCase: {ComputerCase}\n";
         }
     }
 }

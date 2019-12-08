@@ -15,6 +15,10 @@ namespace ComputerHardware
         public CpuSocket Socket { get; set; }
         #endregion
 
+        public override string ToString()
+        {
+            return $"Price: ${Price}\t Make: {Make}\tModel: {Model}\tType: {Enum.GetName(typeof(CoolerType), Type)}\tSocket: {Enum.GetName(typeof(CpuSocket), Socket)}\tSerial: {Serial}";
+        }
     }
 
     enum CoolerType

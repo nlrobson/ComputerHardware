@@ -14,14 +14,16 @@ namespace ComputerHardware
         public decimal Frequency { get; set; }
         public CpuSocket Socket { get; set; }
         #endregion
+
+        public override string ToString()
+        {
+            return $"Price: ${Price}\t Make: {Enum.GetName(typeof(CpuMake), Make)}\tModel: {Model}\tFrequency: {Frequency}GHz\tSocket: {Enum.GetName(typeof(CpuSocket), Socket)}\tSerial: {Serial}";
+        }
     }
+
     enum CpuSocket
     {
         AM4,
-        AM3,
-        AM2,
-        FM3,
-        FM2,
         TR4,
         LGA2066,
         LGA1151,
